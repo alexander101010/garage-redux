@@ -5,11 +5,9 @@ export default function (state = null, action) {
     case FETCH_CARS: {
       return action.payload;
     }
-    // case REMOVE_CAR: {
-    // const copiedState = state.slice(0);
-    // copiedState.push(action.payload);
-    // return copiedState;
-    // }
+    case REMOVE_CAR: {
+      return state.filter((car) => car !== action.payload);
+    }
     default:
       return state;
   }
