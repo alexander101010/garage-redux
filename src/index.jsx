@@ -70,8 +70,8 @@ ReactDOM.render(
       <div className='view-container'>
         <Switch>
           <Route path='/' exact component={CarsIndex} />
-          {/* <Route path='/cars/new' exact component={CarsNew} />
-          <Route path='/cars/:id' exact component={CarsShow} /> */}
+          {/* <Route path='/cars/new' exact component={CarsNew} /> */}
+          <Route path='/cars/:id' exact component={CarsShow} />
         </Switch>
       </div>
     </Router>
